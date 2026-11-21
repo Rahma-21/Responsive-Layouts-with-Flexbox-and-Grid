@@ -147,7 +147,47 @@ img {
 
 /* ===== YOUR CODE — layout + responsiveness ===== */
 
+.timeline {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+.event {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.event-card {
+  flex: 1;
+}
+
 @media (max-width: 768px) {
+  .timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .event {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+  .time {
+    width: 5rem;
+  }
+  .event-card {
+    flex-grow: 1;
+  }
 }
 @media (max-width: 375px) {
+  .timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .event {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
 }
