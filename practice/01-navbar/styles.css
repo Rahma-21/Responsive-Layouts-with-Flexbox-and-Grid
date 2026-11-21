@@ -153,12 +153,6 @@ img {
 
 /* ===== YOUR CODE — layout + responsiveness ===== */
 
-/* .container {
-  display: flex;
-  justify-content: center;
-
-} */
-
 .navbar {
   display: flex;
   justify-content: space-around;
@@ -170,13 +164,23 @@ img {
   display: flex;
   gap: 1rem;
   align-items: center;
-  gap: 10px;
 }
-/* 
-@media (max-width: 1280px) {
-}
+
 @media (max-width: 768px) {
-} */
+  .navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .nav-links,
+  .nav {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+  }
+}
+
 @media (max-width: 375px) {
   .navbar {
     flex-direction: column;
@@ -186,5 +190,9 @@ img {
   .nav {
     flex-direction: column;
     align-items: center;
+  }
+  .nav-links {
+    flex-direction: row;
+    gap: 10px;
   }
 }
